@@ -23,9 +23,6 @@
 #include <M5Core2.h>
 #endif
 
-#ifdef AMMETER
-#include "M5_ADS1115.h"
-#endif
 
 using namespace sensesp;
 
@@ -118,12 +115,6 @@ void setup() {
   M5.Lcd.setRotation(3);
   M5.Lcd.fillScreen(BLACK);
   M5.Lcd.setTextSize(2);
-
-#ifdef AMMETER
-  ammeter.setMode(SINGLESHOT);
-  ammeter.setRate(RATE_8);
-  ammeter.setGain(PAG_512);
-#endif
 
   // Construct the global SensESPApp() object
   SensESPAppBuilder builder;
