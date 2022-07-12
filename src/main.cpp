@@ -1,12 +1,4 @@
-// Signal K application template file.
-//
-// This application demonstrates core SensESP concepts in a very
-// concise manner. You can build and upload the application as is
-// and observe the value changes on the serial port monitor.
-//
-// You can use this source file as a basis for your own projects.
-// Remove the parts that are not relevant to you, and add your own code
-// for eYternal hardware libraries.
+
 #include "sensesp/sensors/sensor.h"
 #include "sensesp/signalk/signalk_listener.h"
 #include "sensesp/signalk/signalk_output.h"
